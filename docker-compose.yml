@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  thumbor:
+    build: ./thumbor
+    environment:
+      - THUMBOR_PORT=8888
+    volumes:
+      - ./data:/data
+    ports:
+      - "8888:8888"
+    restart: always
+    networks:
+      - app
+
+volumes:
+  data:
+    driver: local
