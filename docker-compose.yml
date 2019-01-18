@@ -10,8 +10,6 @@ services:
     ports:
       - "8888:8888"
     restart: always
-    networks:
-      - app
 
 volumes:
   data:

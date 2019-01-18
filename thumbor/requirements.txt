@@ -1,1 +1,5 @@
-thumbor==6.6.0
+opencv-python==4.0.0.21
+opencv-engine==1.0.1
+thumbor==6.7.0
+thumbor-memcached==5.1.0
+graphicsmagick-engine==0.1.1

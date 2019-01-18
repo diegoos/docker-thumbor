@@ -11,21 +11,18 @@ RUN  \
     apt-get -y upgrade && \
     apt-get -y autoremove && \
     apt-get install -y -q \
+        ffmpeg \
+        libjpeg-dev \
+        libpng-dev \
+        libtiff-dev \
+        libgtk2.0-dev \
         python-numpy \
-        python-opencv \
-        git \
-        curl \
-        libdc1394-22 \
-        libjpeg-turbo-progs \
-        graphicsmagick \
-        libgraphicsmagick++3 \
+        python-pycurl \
         libgraphicsmagick++1-dev \
-        libgraphicsmagick-q16-3 \
-        zlib1g-dev \
         libboost-python-dev \
-        libmemcached-dev \
-        gifsicle=1.88* \
-        ffmpeg && \
+        webp \
+        python-opencv \
+        python-dev && \
     apt-get clean
 
 ENV HOME /app
