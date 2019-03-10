@@ -1,3 +1,5 @@
 build:
   docker:
-    web: Dockerfile
+    web: thumbor/Dockerfile
+  config:
+    THUMBOR_PORT: 8888
